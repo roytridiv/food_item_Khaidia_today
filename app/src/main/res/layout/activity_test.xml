@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test"
+    android:background="@color/bg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/card"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="25dp"
+                android:id="@+id/card1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/real">
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/bar"
+                        app:cardCornerRadius="10dp"
+                        >
+                        <TextView
+                            android:layout_margin="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Order Summary"
+                            android:textSize="25sp"
+                            android:textColor="@color/test"/>
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="50dp">
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="sfghsgsgsgsdsdsd"
+                        android:textSize="20sp"
+                        android:id="@+id/orderId"/>
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/orderId"
+                        android:text="hkadbfkbfkhb"
+                        android:textSize="20sp"
+                        android:id="@+id/orderTime"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card1"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="25dp"
+                app:cardBackgroundColor="@color/card"
+                android:id="@+id/card2">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/real1">
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/bar"
+                        app:cardCornerRadius="10dp"
+                        >
+                        <TextView
+                            android:layout_margin="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Receiver Information"
+                            android:textSize="25sp"
+                            android:textColor="@color/test"/>
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="50dp">
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="sfghsgsgsgsdsdsd"
+                        android:textSize="20sp"
+                        android:id="@+id/name"/>
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/name"
+                        android:text="hkadbfkbfkhb"
+                        android:textSize="20sp"
+                        android:id="@+id/address"/>
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/address"
+                        android:text="hkadbfkbfkhb"
+                        android:textSize="20sp"
+                        android:id="@+id/contact"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card2"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="25dp"
+                app:cardBackgroundColor="@color/card">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/real2">
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/bar"
+                        app:cardCornerRadius="10dp"
+                        >
+                        <TextView
+                            android:layout_margin="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bill Summary"
+                            android:textSize="25sp"
+                            android:textColor="@color/test"/>
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="50dp">
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="sfghsgsgsgsdsdsd"
+                        android:textSize="20sp"
+                        android:id="@+id/food_bill"/>
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/food_bill"
+                        android:text="hkadbfkbfkhb"
+                        android:textSize="20sp"
+                        android:id="@+id/delivery_crg"/>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/delivery_crg"
+                        app:cardBackgroundColor="@color/test"
+                        android:id="@+id/line"
+                        android:layout_margin="10dp"></android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line"
+                        android:text="hkadbfkbfkhb"
+                        android:textSize="20sp"
+                        android:id="@+id/total" />
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>
