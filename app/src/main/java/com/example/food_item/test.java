@@ -100,13 +100,21 @@ public class test extends AppCompatActivity {
                         // recyclerAdapter = new RecyclerAdapter(MainActivity.this, itemtLists);
                         //  recyclerView.setAdapter(recyclerAdapter);
                         Log.d("MY_APP_DEBUG" , ""+ item_details + " , " +delivery_fee+" , "+mres_fee+" , "+toAddr+" , " +contact );
+
+                        float totalbill = Float.parseFloat(total_bill);
+                        float deli = Float.parseFloat(delivery_fee);
+
+                        float total = totalbill-deli;
+
+                        String total_Bill =""+total;
+
                         customerOrderId.setText("Order ID : "+order_id);
                         customerOrderTime.setText("Order Time : "+order_time);
                         customerName.setText("Name : " + receiver);
                         customerAddress.setText("Address : "+toAddr);
                         customerContact.setText("Contact : "+contact);
 
-                        customerFoodBill.setText("Food Bill : "+mres_fee);
+                        customerFoodBill.setText("Food Bill : "+total_Bill);
                         customerDelCrg.setText("Delivery Bill: "+delivery_fee);
                         customertotalBill.setText("Total Bill: "+total_bill);
 
